@@ -89,8 +89,8 @@ REPOSITORY_LOCATIONS_SPEC = dict(
     ),
     boringssl = dict(
         project_name = "BoringSSL",
-        project_desc = "Minimal OpenSSL fork",
-        project_url = "https://github.com/google/boringssl",
+        project_desc = "Minimal OpenSSL fork (eduser25 pq)",
+        project_url = "https://github.com/eduser25/envoy-pq",
         # To update BoringSSL, which tracks Chromium releases:
         # 1. Open https://omahaproxy.appspot.com/ and note <current_version> of linux/beta release.
         # 2. Open https://chromium.googlesource.com/chromium/src/+/refs/tags/<current_version>/DEPS and note <boringssl_revision>.
@@ -98,9 +98,9 @@ REPOSITORY_LOCATIONS_SPEC = dict(
         #
         # chromium-103.0.5060.24 (linux/beta)
         version = "62079f7cb4e9a2d5d8a68fe8a4a3f2375dd53585",
-        sha256 = "770faf8dcea0c2872e0c8202fc0d71f5b623c71510d1fa580ab271d2de7e72a9",
-        strip_prefix = "boringssl-{version}",
-        urls = ["https://github.com/google/boringssl/archive/{version}.tar.gz"],
+        sha256 = "f06e000fbc99c52780aacae325ddd100dffd45ed88acc58404fdc22646b85ff5",
+        strip_prefix = "boringssl-pq-0.0.0",
+        urls = ["https://github.com/eduser25/boringssl-pq/archive/refs/tags/v0.0.0.zip"],
         use_category = ["controlplane", "dataplane_core"],
         release_date = "2022-05-10",
         cpe = "cpe:2.3:a:google:boringssl:*",
